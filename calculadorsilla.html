@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		function calculadorsilla(){
+			var var1, var2, respuesta; //3 var declara variables
+
+				operador = prompt("1. Suma, 2. Resta, 3. Multiplicación, 4. Divición");
+				var1=parseInt(prompt("Ingresa el primer número"));
+				var2 =parseInt(prompt("Ingresa el segundo número"));
+			
+			switch (operador){
+				case "1": //si se presiona 1, 2, 3 o 4rta opción se abrirán 4 casos
+					respuesta=var1+var2;
+						alert(respuesta);
+				break;
+
+				case "2":
+					if(var1>var2){
+						respuesta=var1-var2;
+						alert(respuesta);
+					}else{
+						respuesta=var1-var2;
+						alert(respuesta);
+					}
+				break;
+				case "3": 
+					respuesta = var1*var2;
+					alert(respuesta);
+				break;
+
+				case "4":
+					if(var1>var2){					
+						respuesta=var1/var2;
+						alert(respuesta);					
+					}else{					
+						resultado=var2/var1;
+						alert(respuesta);	
+					}
+				break;
+			}
+		}
+	</script>
+</body>
+</html>
